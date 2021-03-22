@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>My Hobby</title>
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src='script.js'>
+	</script>
+</head>
+
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<div class="navbar">
+    <div class="dropdown">
+  <button class="dropbtn"> <a href="index.html">Home</a></button>
+  </div>
+  <div class="dropdown">
+  <button class="dropbtn"><a href="woodcraft.html"> Woodcraft </a> </button>
+      <div class="dropdown-content">
+      <a href="woodcraft.html#beginner">Beginner</a>
+	  <a href="woodcraft.html#intermediate">Intermediate</a>
+      <a href="woodcraft.html#advanced">Advanced</a>
+
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn"><a href="gundam.html">Gunpla</a></button>
+    <div class="dropdown-content">
+      <a href="gundam.html#grades">Grades</a>
+      <a href="gundam.html#assembly">Assembly</a>
+      <a href="gundam.html#display">Display</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+  <button class="dropbtn"> <a href="tools.html"><u>Tools</u></a></button>
+      <div class="dropdown-content">
+      <a href="tools.html#essential">Essential</a>
+      <a href="tools.html#optional">Optional</a>
+
+    </div>
+  </div>
+</div>
+
+<div id="header" class="header"></div>
+
+<p style="font-size:25px;text-align:center">The right tools turn your model into a work of Art!
+</p>
+<hr>
+<div id="essential">
+
+	<h2> <u> Essential Tools </u> </h2>
+<p>
+
+		<i>Grades</i> is a distinction used by the manufacturer, Bandai, to describe generally how detailed a model is.
+		Many models are available in multiple grades, depeicting the same fictional machine with different levels of detail. 
+		<br><br>
+		Models within a grade are generally the same scale, as seen in the tabs below. 
+		However, the scale is not consistent 100% of the time although it is generally a good gauge.
+</p>
+		
+		<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Clippers')" id="defaultOpen">Clippers</button>
+  <button class="tablinks" onclick="openTab(event, 'Craft Knife')">Craft Knife</button>
+  <button class="tablinks" onclick="openTab(event, 'File')" >File</button>
+  <button class="tablinks" onclick="openTab(event, 'Tweezers')">Tweezers</button>
+
+</div>
+
+<div id="Clippers" class="tabcontent">
+  <h3>Clippers</h3>
+  <div class="tabcontainer">
+  <img src="clippers.jpg" class="tabimage" style="height:200px">
+	<p class="tabtext">	Clippers are an essential aspect to many different kinds of model building. 
+	It is used to seperate parts cleanly with minimal damage to any of the parts. 
+	A strong pair of scissors can replace this if it is unavailable, but it will not be as cleanly cut in many cases.
+	</p>
+	</div>
+</div>
+
+<div id="Craft Knife" class="tabcontent">
+  <h3>Craft Knife</h3>
+  <div class="tabcontainer">
+  <img src="craftknife.jfif" class="tabimage" style="height:200px">
+	<p class="tabtext">	Craft knives are important tools to carfully carve parts with greater accuracy. 
+	It is especially important when you have a weaker pair of clippers. Craft knives help to cut the excess
+	material off of component pieces as well, which can be used after clipping to create a nice and smootly cut product.
+	<br><br>
+	<b>Note:</b> Be careful not to cut too much material as it might ruin your component pieces!
+	</p>
+	</div>
+</div>
+
+<div id="File" class="tabcontent">
+  <h3>File</h3>
+  <div class="tabcontainer">
+  <img src="nailfile.jpg" class="tabimage" style="height:200px">
+	<p class="tabtext">	Files are used to smoothen out cut edges caused by clippers and craft knives. 
+	For certain types of model kits, files are also required to slightly alter the shapes of component pieces to allow them to 
+	fit together snugly. This is seen especially often in the woodcraft construction kits.
+	</p>
+	</div>
+</div>
+
+<div id="Tweezers" class="tabcontent">
+  <h3>Tweezers</h3>
+  <div class="tabcontainer">
+  <img src="tweezers.jpg" class="tabimage" style="height:200px">
+	<p class="tabtext">	Tweezers are used for intricate design work. They are especially useful for actions such as 
+	sticker pasting and small piece-gluing. While they might seem to be not as essential as the other three tools,
+	tweezers are incredibly important in enhancing the details of your model to make it that much more spectacular.
+	</p>
+	</div>
+</div>
+
+
+
+</div>
+<hr>
+<div id="optional">
+
+	<h2> <u> Optional </u> </h2> 
+	<p>
+		Some additional tools can make your models shine with even greater detail and realistic colours. 
+		For Gunpla in particular, the following three items are widely and commonly used in the making and finishing of models. 
+		<br>
+		<br>Markers for drawing lines and creating depth.
+		<br>
+		<br>Matte spray paint to create a more rugged and realistic colour.
+		<br>
+		<br>A cutting mat to do your craft with greater accuracy and detail, while protecting the floor or table.
+	</p>
+
+<div class="row1">
+  <div class="column1">
+    <img src="markers.jpg" alt="" style="width:100%">
+  </div>
+  <div class="column1">
+    <img src="spraycan.png" alt="" style="width:100%">
+  </div>
+  <div class="column1">
+    <img src="cuttingmat.jpg" alt="" style="width:100%">
+  </div>
+</div>
+
+</div>
+
+<script>
+
+var mybutton = document.getElementById("myBtn");
+var navbar = document.getElementById("navbar");
+/*
+window.onload = function(){
+	magnify("myimage", 2);
+	showSlides()
+};*/
+window.onscroll = function() {scrollFunction()};
+
+document.getElementById("defaultOpen").click()
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>My Hobby</title>
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src='script.js'>
+	</script>
+</head>
+
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<div class="navbar">
+    <div class="dropdown">
+  <button class="dropbtn"> <a href="index.html">Home</a></button>
+  </div>
+  <div class="dropdown">
+  <button class="dropbtn"><a href="woodcraft.html"> <u>Woodcraft</u> </a> </button>
+      <div class="dropdown-content">
+      <a href="woodcraft.html#beginner">Beginner</a>
+	  <a href="woodcraft.html#intermediate">Intermediate</a>
+      <a href="woodcraft.html#advanced">Advanced</a>
+
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn"><a href="gundam.html">Gunpla</a></button>
+    <div class="dropdown-content">
+      <a href="gundam.html#grades">Grades</a>
+      <a href="gundam.html#assembly">Assembly</a>
+      <a href="gundam.html#display">Display</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+  <button class="dropbtn"> <a href="tools.html">Tools</a></button>
+      <div class="dropdown-content">
+      <a href="tools.html#essential">Essential</a>
+      <a href="tools.html#optional">Optional</a>
+
+    </div>
+  </div>
+</div>
+
+<div id="header" class="header1"></div>
+
+<p style="font-size:25px;text-align:center">A fun alternative to jigsaw puzzles!
+</p>
+<hr>
+<div id="beginner">
+
+	<h2> <u> Beginner Models </u> </h2>
+
+		<header>
+		Cheap, simple model kits for under S$15, suitable for children above 5 years old.
+		</header>
+		<nav>
+		
+		<a target="_blank" href="animals.jpg">
+		<img src="animals.jpg" alt="Animals" title="Animals" class="section">
+		</a>
+		<a target="_blank" href="furniture.jpg">
+		<img src="furniture.jpg" alt="Furniture" title="Furniture" class="section">
+		</a>
+		</nav>
+		
+
+</div>
+<hr>
+<div id="intermediate">
+
+	<h2> <u> Intermediate Models </u> </h2>
+		<header>
+		Higher difficulty model kits for S$15-30, suitable for children with some exposure to puzzles and model kits.
+		</header>
+	
+		<nav>
+		<a target="_blank" href="vehicles.jpg">
+		<img src="vehicles.jpg" alt="Vehicles" title="Vehicles" class="section">
+		</a>
+		<a target="_blank" href="tianta.jpg">
+		<img src="tianta.jpg" alt="Tian Ta" title="Tian Ta" class="section">
+		</a>
+		<a target="_blank" href="house.jpg">
+		<img src="house.jpg" alt="House" title="House" class="section">
+		</a>
+		<a target="_blank" href="eiffeltower.jpg">
+		<img src="eiffeltower.jpg" alt="Eiffel Tower" title="Eiffel Tower" class="section">
+		</a>
+		</nav>
+			
+</div>
+<hr>
+<div id="advanced">
+
+	<h2> <u> Advanced Models </u> </h2>
+	<header>
+		Advanced,complex model kits for under over S$30, suitable for children with high exposure to puzzles and model kits.
+		</header>
+	<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="sailingboat.jpg">
+      <img src="sailingboat.jpg" alt="Sailing Boat" width="600" height="400">
+    </a>
+    <div class="desc">Sailing Boat</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="hotairballoon.jpg">
+      <img src="hotairballoon.jpg" alt="Hot Air Balloon" width="600" height="400">
+    </a>
+    <div class="desc">Hot Air Balloon</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="carousel.jpg">
+      <img src="carousel.jpg" alt="Carousel" width="600" height="400">
+    </a>
+    <div class="desc">Carousel</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="biplane.jpg">
+      <img src="biplane.jpg" alt="Biplane" width="600" height="400">
+    </a>
+    <div class="desc">Biplane</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="airship.jpg">
+      <img src="airship.jpg" alt="Airship" width="600" height="400">
+    </a>
+    <div class="desc">Airship</div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+</div>
+
+<script>
+
+var mybutton = document.getElementById("myBtn");
+var navbar = document.getElementById("navbar");
+
+/*
+window.onload = function(){
+	magnify("myimage", 2);
+	showSlides()
+};*/
+window.onscroll = function() {scrollFunction()};
+
+
+</script>
+
+</body>
+
+</html>

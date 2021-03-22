@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>My Hobby</title>
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src='script.js'>
+	</script>
+</head>
+
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<div class="navbar">
+    <div class="dropdown">
+  <button class="dropbtn"> <a href="index.html"><u>Home</u></a></button>
+  </div>
+  <div class="dropdown">
+  <button class="dropbtn"><a href="woodcraft.html"> Woodcraft </a> </button>
+      <div class="dropdown-content">
+      <a href="woodcraft.html#beginner">Beginner</a>
+	  <a href="woodcraft.html#intermediate">Intermediate</a>
+      <a href="woodcraft.html#advanced">Advanced</a>
+
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn"><a href="gundam.html">Gunpla</a></button>
+    <div class="dropdown-content">
+      <a href="gundam.html#grades">Grades</a>
+      <a href="gundam.html#assembly">Assembly</a>
+      <a href="gundam.html#display">Display</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+  <button class="dropbtn"> <a href="tools.html">Tools</a></button>
+      <div class="dropdown-content">
+      <a href="tools.html#essential">Essential</a>
+      <a href="tools.html#optional">Optional</a>
+
+    </div>
+  </div>
+</div>
+
+<div id="header" class="header"></div>
+<hr>
+
+<div id="1">
+	<h1> <u> Model Building </u> </h1>
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <a href="woodcraft.html"><img src="woodcraft.jpg" style="height:50vh"></a>
+  <div class="text"><b>Woodcraft kits</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <a href="gundam.html"><img src="gundam1.jpg" style="height:50vh"></a>
+  <div class="text"><b>Gunpla</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <a href="tools.html"><img src="toolkit.jfif" style="height:50vh"></a>
+  <div class="text"><b>Tools</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+
+<div id="map">
+	<h2> My Collection </h2>
+	<div class="img-magnifier-container" >
+	<img id="myimage" src="mycollection.jpg" alt="My Collection" class="map" style="float:left">
+	</div>
+</div>
+
+
+<script>
+
+var mybutton = document.getElementById("myBtn");
+var navbar = document.getElementById("navbar");
+
+
+window.onload = function(){
+	magnify("myimage", 2);
+	showSlides()
+};
+window.onscroll = function() {scrollFunction()};
+
+
+
+</script>
+
+</body>
+
+</html>
